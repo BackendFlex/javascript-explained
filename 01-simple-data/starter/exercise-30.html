@@ -12,8 +12,9 @@
   </body>
   <script>
     let price = 100;
+    const quantity = 2;
     const tax = 0.2;
-    let total = price + price * tax;
+    let total = (price + price * tax) * quantity;
     console.log(total.toFixed(2));
   </script>
 </html>
