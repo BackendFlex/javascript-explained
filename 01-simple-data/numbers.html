@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+const num = 10;
+const numAsPrice = num.toFixed(2);
+
+// Logs out 10.00
+console.log( numAsPrice );
+
+const a = 4;
+const b = 3;
+let c = "";
+
+// Add
+c = a + b;
+console.log("a + b +  " + c);
+
+// Subtract 
+c = a - b;
+console.log("a - b =  " + c);
+
+// Multiply
+c = a * b;
+console.log("a * b =  " + c);
+
+// Divide
+c = a / b;
+console.log("a / b =  " + c);
+
+//  Get remainder of division 
+c = a % b;
+console.log("a % b =  " + c);
+
+// This will return 20, not 60 
+// const value = 10 + 2 * 5;
+// console.log(value);
+
+// This will return 60, not 20
+const value = (10 + 2) * 5;
+console.log(value);
+
+const numeral = 1;
+const string = "2";
+
+// This will log "12"
+const result = numeral + string;
+console.log(result);
+
+const numeral = 1;
+const string = "2";
+
+// This will log 3
+const result = numeral + Number(string);
+console.log(result);
+
+// Set a number to work with 
+const pi = 3.14
+
+// Rounding operations
+// 3 
+const rounded = Math.round(pi);
+// 4
+const roundedUp = Math.ceil(pi);
+// 3
+const roundedDown = Math.floor(pi);
+
+// console.log(
+//     rounded,
+//     roundedUp,
+//     roundedDown,
+// );
+
+// Squaring operations
+// 9.74344
+const squared = Math.pow(pi, 2);
+// 1.7663521834672634827
+const squareRoot = Math.sqrt(pi);
+
+console.log(
+    rounded,
+    roundedUp,
+    roundedDown,
+    squared,
+    squareRoot
+);
+
+let loggedIn = true
+
+let loggedIn = false 
+if ( loggedIn == false ) {
+    // User is not logged in 
+    console.log(  'Please log in' )
+} else {
+
+    // User IS logged in 
+    console.log( 'Welcome user!' )
+}
+
+// This is an object 
+const post = { id: 1, title: `Post Title` };
+
+// This is an array
+const postIds = [ 1, 2, 3, 4, 5 ];
+</script>

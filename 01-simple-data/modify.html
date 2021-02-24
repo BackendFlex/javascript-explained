@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+<script>
+    // Create a string for us to experimennt with 
+    const title = 'The Long Walk in the Woods';
+
+    // Gives us 26 - the total number of characters in string 
+    console.log(title.length);
+
+    // Gets first character and the third character
+    // title.length is NOT zero indexed
+    // So we must subtract 1 to get the last character
+    const firstChar = title.charAt(0);
+    const thirdChar = title.charAt(2);
+    const lastChart = title.charAt(title.length - 1);
+    console.log(firstChar, thirdChar, lastChart);
+
+    // Return true or false based on
+    // If the string starts or ends with
+    // Certain characters
+    // Will return true then false
+    const startsWithH = title.startsWith("T");
+    const endWithPeriod = title.endsWith(".");
+    console.log(startsWithH, endsWithPeriod);
+
+    // Check if string contains "Woods"
+    // will return true
+    const includesWoods = title.includes("Woods");
+    console.log(includesWoods);
+
+    // Check to see the first position a character appears
+    // Remember, it is zero indexed
+    const positionOfL  =title.indexOf("L");
+    console.log(positionOfL);
+
+    // Converts a string of All CAPS
+    const titleUpperCase = title.toUpperCase();
+    console.log(titleUpperCase);
+
+    // Notice this loades out title unchanged!
+    console.log(title);
+
+    const first = 'Zac';
+    const last = 'Gordon';
+
+    const full = first + last;
+    const fullWithSpaces = first + " " + last;
+
+    // Log out "ZacGordon" and "Zac Gordon"
+    console.log( full, fullWithSpaces );
+
+    const full = first.concat( last );
+    const fullWithSpaces = first.concat(" ", last );
+
+    // Create a string that will be changed using "let"
+    let message = "Hello,";
+
+    //Add to that string using "+="
+    message += " how are you?";
+    message += "Would you live to add anything?"
+
+    // Logs out "Hello, how are you?
+    // Would you like to add anything?"
+    console.log( message );
+    
+</script>
