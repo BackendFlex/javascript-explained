@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // Normal function syntax
+    function sayHi(name){
+        console.log(name);
+    }
+    // Logs Zac
+    sayHi( "Zac");
+
+    //Arrow function syntax
+    const sayHello = (name) => {
+        console.log(name);
+    }
+    // Logs Zac
+    sayHello("Zac");
+
+    // Single parameter does not need parenthesis
+    const sayHello = name => {
+        console.log(name);
+    }
+
+    // Multiple parameters do need parenthesis
+    const sayHello = (first, last) => {
+        console.log(`Hello ${first} ${last}` );
+    }
+
+    // Full arrow syntax - if all you need is a function to return something to us
+    const getHelloMessage = (name) => {
+        return `Hello ${name}!`;
+    }
+    // Shortened arrow syntax
+    // For when you only have to return a value
+    const getHellowMessage = (name) => `Hello ${name}`;
+</script>
+</html>
