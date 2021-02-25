@@ -11,6 +11,15 @@
     <p>Open the web inspector console to test.</p>
   </body>
   <script>
+    const login = () => {
+    const password = prompt(`Please enter password`);
+      if (password === `password`) {
+        alert(`Thank you! You are Logged In!`);
+      } else {
+        alert(`Incorrect, please try again!`);
+      }
+    }
+    login();
     function login() {
       const password = prompt(`Please enter password`);
       if (password === `password`) {
