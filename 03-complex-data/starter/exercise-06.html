@@ -12,5 +12,15 @@
   </body>
   <script>
     // Place your code below this line, before the closing script tag
+    function getHeaderMarkup() {
+      let user = {
+        username: ``,
+        password: ``
+      };
+      user.username = prompt(`Please enter your Username`);
+      user.password = prompt(`Please enter your Password`);
+      return user;
+    }
+    console.log(getHeaderMarkup())
   </script>
 </html>

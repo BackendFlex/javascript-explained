@@ -32,6 +32,13 @@
         cats: [`js`],
         url: `using-a-code-editor`,
         excerpt: `A tutorial on the basics`
+      },
+      {
+        id: 4,
+        title: `It Be What It Be`,
+        cats: [`js`, `with a fiddle`],
+        url: `working it till it breaks`,
+        excerpt: `Practicing more and more`
       }
     ];
     const jsArticles = posts.filter(post => post.cats.includes(`js`));
@@ -47,5 +54,7 @@
       markup += `</div>`;
       return markup;
     }
+    console.log(getPostMarkup(jsArticles));
+
   </script>
 </html>

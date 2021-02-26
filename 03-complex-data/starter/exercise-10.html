@@ -19,6 +19,14 @@
     };
 
     // Place your code below this line, before the closing script tag
+    function getPostMarkup(post) {
+      let markup = `<article id="post">`;
+      markup += getHeaderMarkup(post);
+      markup += getExcerptMarkup(post);
+      markup += `</article>`;
+      return markup;
+    }
+    console.log(getPostMarkup(post));
 
     function getExcerptMarkup(post) {
       let markup = `<div class="excerpt>`;

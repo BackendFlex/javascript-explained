@@ -32,7 +32,15 @@
         cats: [`js`, `practice`],
         url: `more-js-practice`,
         excerpt: `Practice, practice, practice`
+      },
+      {
+        id: 5,
+        title: `Hosting JS Projects`,
+        cats: [`hosting`],
+        url: `hosting-js-practice`,
+        excerpt: `Some helpful information to know`
       }
+
     ];
     const jsArticles = posts.filter(post => post.cats.includes(`js`));
     const nonJSArticles = posts.filter(post => !post.cats.includes(`js`));
@@ -48,5 +56,7 @@
       return markup;
     }
     // Place your code below this line, before the closing script tag
+    console.log(getPostMarkup(nonJSArticles));
+
   </script>
 </html>
