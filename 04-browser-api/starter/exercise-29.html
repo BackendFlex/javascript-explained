@@ -51,13 +51,25 @@
         </div>
       `;
 
-    // Place your code below this line
-
-    function openModal(e) {
+      function openModal(e) {
       const body = document.querySelector(`body`);
       body.insertAdjacentHTML(`beforeend`, modal());
+
+      const closeButton = document.querySelector(`.close-modal`);
+      closeButton.addEventListener(`click`, closeModal);
     }
 
     button.addEventListener(`click`, openModal);
+
+    function closeModal(e) {
+      // The following two lines remove the event listener
+      // To prevent memory leaks in the browser
+      const button = document.querySelector(`.close-modal`);
+      button.removeEventListener(`click`, closeModal);
+
+      // Place your code below here
+      const modal = document.querySelector(`.overlay`);
+      modal.remove();
+    }
   </script>
 </html>

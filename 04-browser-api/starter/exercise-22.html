@@ -22,5 +22,13 @@
     const container = document.querySelector(`#container`);
 
     // Place your code below this line
+    container.addEventListener(`container`);
+    function logMousePosition(e){
+      e.preventDefault();
+      console.log(e);
+    }
+
+    container.addEventListener(`mousemove`, logMousePosition);
+
   </script>
 </html>
