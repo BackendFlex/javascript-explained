@@ -13,7 +13,8 @@
     </div>
   </body>
   <script>
-    fetch(`https://dog.ceo/api/breeds/image/random`)
+    const url = `https://dog.ceo/api/breeds/image/random`;
+    fetch(url)
       .then(response => response.json())
       .then(data => console.log(data))
       .catch(error => console.error(error));
